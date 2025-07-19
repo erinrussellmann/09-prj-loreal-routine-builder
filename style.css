@@ -9,6 +9,7 @@
 body {
   font-family: "Montserrat", Arial, Helvetica, sans-serif;
   color: #333;
+  background: #fff8ef;
   display: flex;
   justify-content: center;
 }
@@ -23,6 +24,9 @@ body {
   text-align: center;
   padding-top: 50px;
   padding-bottom: 10px;
+  background: #fff8ef;
+  border-radius: 0 0 18px 18px;
+  box-shadow: none;
 }
 
 .logo {
@@ -32,8 +36,10 @@ body {
 
 .site-title {
   font-size: 22px;
-  font-weight: 500;
+  font-weight: 700;
   margin-bottom: 10px;
+  color: #ff003b;
+  letter-spacing: 1px;
 }
 
 /* category filter */
@@ -46,7 +52,7 @@ body {
   width: 100%;
   padding: 16px;
   font-size: 18px;
-  border: 2px solid #000;
+  border: 2px solid #e3a525;
   border-radius: 8px;
   cursor: pointer;
   background-color: white;
@@ -55,13 +61,13 @@ body {
 
 .search-section select:focus {
   outline: none;
-  border-color: #666;
+  border-color: #ff003b;
 }
 
 /* chat section */
 .chatbox {
   margin: 40px 0;
-  border: 2px solid #000;
+  border: 2px solid #e3a525;
   border-radius: 8px;
   padding: 26px;
 }
@@ -69,6 +75,7 @@ body {
 .chatbox h2 {
   font-size: 20px;
   margin-bottom: 20px;
+  color: #e3a525;
 }
 
 .chat-window {
@@ -113,7 +120,7 @@ body {
 
 .chat-form button {
   font-size: 18px;
-  background: #000;
+  background: #ff003b;
   color: #fff;
   border: none;
   padding: 12px;
@@ -127,12 +134,85 @@ body {
 }
 
 .chat-form button:hover {
-  background: #666666;
+  background: #e3a525;
+  color: #ff003b;
 }
 
 .chat-form button:focus {
-  outline: 2px solid #000;
+  outline: 2px solid #e3a525;
   outline-offset: 2px;
+}
+
+/* selected products */
+.selected-products {
+  margin: 40px 0;
+  padding: 20px;
+  border: 2px solid #ff003b;
+  border-radius: 8px;
+}
+
+.selected-products h2 {
+  font-size: 20px;
+  margin-bottom: 20px;
+  color: #ff003b;
+}
+
+#selectedProductsList {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+/* Product buttons container */
+.product-buttons {
+  display: flex;
+  gap: 12px;
+  margin-top: 20px;
+}
+
+/* Generate routine button - updated to target correct ID */
+#generateRoutineBtn {
+  flex: 1;
+  padding: 16px;
+  font-size: 18px;
+  font-weight: 500;
+  color: #fff;
+  background: #e3a525;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+#generateRoutineBtn:hover {
+  background: #ff003b;
+  color: #fff;
+}
+
+#generateRoutineBtn i {
+  margin-right: 8px;
+}
+
+/* Clear all button */
+#clearAllBtn {
+  padding: 16px 24px;
+  font-size: 18px;
+  font-weight: 500;
+  color: #fff;
+  background: #999;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+#clearAllBtn:hover {
+  background: #ff003b;
+  color: #fff;
+}
+
+#clearAllBtn i {
+  margin-right: 8px;
 }
 
 /* visually hidden */
@@ -153,7 +233,7 @@ body {
   margin: 60px 0 40px;
   text-align: center;
   font-size: 14px;
-  color: #666;
+  color: #e3a525;
 }
 
 .site-footer nav {
@@ -162,12 +242,12 @@ body {
 
 .site-footer a {
   margin: 0 8px;
-  color: #000;
+  color: #ff003b;
   text-decoration: none;
 }
 
 .site-footer a:hover {
-  color: #666666;
+  color: #e3a525;
 }
 
 /* products grid */
@@ -211,45 +291,4 @@ body {
 .product-card p {
   font-size: 14px;
   color: #666;
-}
-
-/* selected products */
-.selected-products {
-  margin: 40px 0;
-  padding: 20px;
-  border: 2px solid #000;
-  border-radius: 8px;
-}
-
-.selected-products h2 {
-  font-size: 20px;
-  margin-bottom: 20px;
-}
-
-#selectedProductsList {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 10px;
-}
-
-.generate-btn {
-  width: 100%;
-  margin-top: 20px;
-  padding: 16px;
-  font-size: 18px;
-  font-weight: 500;
-  color: #fff;
-  background: #000;
-  border: none;
-  border-radius: 8px;
-  cursor: pointer;
-  transition: background 0.3s;
-}
-
-.generate-btn:hover {
-  background: #666;
-}
-
-.generate-btn i {
-  margin-right: 8px;
 }
