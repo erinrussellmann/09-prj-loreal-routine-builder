@@ -153,7 +153,6 @@ body {
 
 .selected-products h2 {
   font-size: 20px;
-  margin-bottom: 20px;
   color: #ff003b;
 }
 
@@ -190,28 +189,6 @@ body {
 }
 
 #generateRoutineBtn i {
-  margin-right: 8px;
-}
-
-/* Clear all button */
-#clearAllBtn {
-  padding: 16px 24px;
-  font-size: 18px;
-  font-weight: 500;
-  color: #fff;
-  background: #999;
-  border: none;
-  border-radius: 8px;
-  cursor: pointer;
-  transition: background 0.3s;
-}
-
-#clearAllBtn:hover {
-  background: #ff003b;
-  color: #fff;
-}
-
-#clearAllBtn i {
   margin-right: 8px;
 }
 
@@ -291,4 +268,106 @@ body {
 .product-card p {
   font-size: 14px;
   color: #666;
+}
+
+/* Chat messages */
+.message {
+  margin-bottom: 15px;
+  padding: 12px;
+  border-radius: 8px;
+}
+
+.user-message {
+  background: #e3f2fd;
+  margin-left: 20px;
+}
+
+.assistant-message {
+  background: #f5f5f5;
+  margin-right: 20px;
+}
+
+.message-label {
+  font-weight: 600;
+  font-size: 14px;
+  margin-bottom: 5px;
+  color: #333;
+}
+
+.user-message .message-label {
+  color: #1976d2;
+}
+
+.assistant-message .message-label {
+  color: #e3a525;
+}
+
+.message-content {
+  line-height: 1.6;
+  white-space: pre-wrap;
+}
+
+/* Product tags */
+.product-tag {
+  display: inline-flex;
+  align-items: center;
+  background: #ff003b;
+  color: white;
+  padding: 8px 12px;
+  border-radius: 20px;
+  font-size: 14px;
+  margin: 4px;
+}
+
+.product-tag button {
+  background: none;
+  border: none;
+  color: white;
+  font-size: 16px;
+  margin-left: 8px;
+  cursor: pointer;
+  padding: 0;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.product-tag button:hover {
+  background: rgba(255, 255, 255, 0.2);
+}
+
+/* Disabled button state */
+#generateRoutineBtn:disabled {
+  background: #ccc;
+  cursor: not-allowed;
+}
+
+#generateRoutineBtn:disabled:hover {
+  background: #ccc;
+}
+  cursor: pointer;
+  padding: 0;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.product-tag button:hover {
+  background: rgba(255, 255, 255, 0.2);
+}
+
+/* Disabled button state */
+#generateRoutineBtn:disabled {
+  background: #ccc;
+  cursor: not-allowed;
+}
+
+#generateRoutineBtn:disabled:hover {
+  background: #ccc;
 }

@@ -44,35 +44,29 @@
 
       <!-- Selected Products -->
       <div class="selected-products">
-        <h2>Selected Products</h2>
-        <!-- Move the clear all button to top right corner -->
-        <button
-          onclick="clearAllSelectedProducts()"
-          style="
-            background: #ff6b6b;
-            color: white;
-            border: none;
-            border-radius: 4px;
-            padding: 8px 16px;
-            cursor: pointer;
-            float: right;
-            margin-top: -40px;
-          "
-        >
-          Clear All
-        </button>
+        <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 20px;">
+          <h2 style="margin: 0;">Selected Products</h2>
+          <button
+            onclick="clearAllSelectedProducts()"
+            style="
+              background: #ff6b6b;
+              color: white;
+              border: none;
+              border-radius: 4px;
+              padding: 8px 16px;
+              cursor: pointer;
+              font-size: 14px;
+            "
+          >
+            Clear All
+          </button>
+        </div>
         <div id="selectedProductsList"></div>
         <div class="product-buttons">
           <button onclick="generateRoutine()" id="generateRoutineBtn">
             <i class="fa-solid fa-wand-magic-sparkles"></i> Generate Routine
           </button>
         </div>
-      </div>
-
-      <!-- Generated Routine Display -->
-      <div class="routine-display" id="routineDisplay" style="display: none">
-        <h2>Your Personalized Routine</h2>
-        <div id="routineContent"></div>
       </div>
 
       <!------- Chat Area ------->
@@ -113,5 +107,7 @@
     <script src="secrets.js"></script>
     <!-- Then load script.js -->
     <script src="script.js"></script>
+  </body>
+</html>
   </body>
 </html>
